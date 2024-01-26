@@ -27,6 +27,6 @@ jobs:
         working-directory: ./terraform
         id: validate
       - name: Terraform Plan
-        run: terraform plan -no-color
+        run: terraform plan -var-file=test.tfvars -no-color
         working-directory: ./terraform
         id: plan

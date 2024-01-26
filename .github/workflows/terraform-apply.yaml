@@ -23,5 +23,5 @@ jobs:
         working-directory: ./terraform
         id: init
       - name: Apply
-        run: terraform apply -auto-approve
+        run: terraform apply -var-file=test.tfvars -auto-approve
         working-directory: ./terraform
